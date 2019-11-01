@@ -4,6 +4,11 @@
 require_once('model/PostManager.php');
 require_once('model/CommentManager.php');
 
+function home()
+{
+    require('view/backend/templateFrontend.php');
+}
+
 function listPosts()
 {
     $postManager = new \OpenClassrooms\Blog\Model\PostManager();

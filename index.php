@@ -3,7 +3,10 @@ require('controller/frontend.php');
 
 try {
     if (isset($_GET['action'])) {
-        if ($_GET['action'] == 'listPosts') {
+        if ($_GET['action'] == 'accueil') {
+            home();
+        }
+        elseif ($_GET['action'] == 'listPosts') {
             listPosts();
         }
         elseif ($_GET['action'] == 'post') {

@@ -1,7 +1,7 @@
-<?php $title = 'Mon blog'; ?>
+
+<?php $title = 'Blog Jean Forteroche'; ?>
 
 <?php ob_start(); ?>
-<h1>Mon super blog !</h1>
 <p>Derniers billets du blog :</p>
 
 
@@ -27,4 +27,3 @@ $posts->closeCursor();
 ?>
 <?php $content = ob_get_clean(); ?>
 
-<?php require('template.php'); ?>
