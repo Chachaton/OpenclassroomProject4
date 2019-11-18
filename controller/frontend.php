@@ -1,43 +1,26 @@
 <?php
 
-// Chargement des classes
-require_once('model/PostManager.php');
-require_once('model/CommentManager.php');
-
 function home()
 {
-    require('view/backend/templateFrontend.php');
+    require('view/frontend/home.php');
 }
 
-function listPosts()
+function author()
 {
-    $postManager = new \OpenClassrooms\Blog\Model\PostManager();
-    $posts = $postManager->getPosts();
-
-    require('view/frontend/listPostsView.php');
+    require('view/frontend/author.php');
 }
 
-function post()
+function chapters()
 {
-    $postManager = new \OpenClassrooms\Blog\Model\PostManager();
-    $commentManager = new \OpenClassrooms\Blog\Model\CommentManager();
-
-    $post = $postManager->getPost($_GET['id']);
-    $comments = $commentManager->getComments($_GET['id']);
-
-    require('view/frontend/postView.php');
+    require('view/frontend/chapters.php');
 }
 
-function addComment($postId, $author, $comment)
+function contact()
 {
-    $commentManager = new \OpenClassrooms\Blog\Model\CommentManager();
+    require('view/frontend/contact.php');
+}
 
-    $affectedLines = $commentManager->postComment($postId, $author, $comment);
-
-    if ($affectedLines === false) {
-        throw new Exception('Impossible d\'ajouter le commentaire !');
-    }
-    else {
-        header('Location: index.php?action=post&id=' . $postId);
-    }
+function logIn()
+{
+    require('view/frontend/logIn.php');
 }

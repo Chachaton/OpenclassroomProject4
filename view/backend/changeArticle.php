@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -42,7 +42,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Tableau de bord</a>
+          <a class="navbar-brand" href="dashboard.php">Tableau de bord</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -57,43 +57,16 @@
       <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
-            <li><a href="#">Ajouter un chapitre</a></li>
-            <li><a href="#">Modifier un chapitre</a></li>
-            <li><a href="#">Gérer les avis</a></li>
+            <li><a href="newArticle.php">Ajouter un chapitre</a></li>
+            <li><a href="changeArticle.php">Modifier un chapitre</a></li>
+            <li><a href="manageReviews.php">Gérer les avis</a></li>
           </ul>
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
           <h1 class="page-header">Billet simple pour l'Alaska</h1>
 
-          <h2 class="sub-header">Ajouter un chapitre</h2>
-          <div class="table-responsive">
-<form>
-  <div class="form-group">
-    <label for="exampleFormControlInput1">Date</label>
-    <input type="date" class="form-control" id="exampleFormControlInput1">
-  </div>
-  <div class="form-group">
-    <label for="exampleFormControlInput2">Chapitre</label>
-    <input type="text" class="form-control" id="exampleFormControlInput2">
-  </div>
-  <div class="form-group">
-    <label for="exampleFormControlInput3">Titre</label>
-    <input type="text" class="form-control" id="exampleFormControlInput3">
-  </div>
-    <div class="form-group">
-    <label for="exampleFormControlTextarea1">Légende</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
-  </div>
-  <div class="form-group">
-    <label for="exampleFormControlTextarea2">Texte</label>
-    <textarea class="form-control" id="exampleFormControlTextarea2" rows="10"></textarea>
-  </div>
-  <div class="custom-file">
-    <label class="custom-file-label" for="customFile">Ajouter une image</label>
-    <input type="file" class="custom-file-input" id="customFile">
-  </div>
-</form>
-          </div>
+          <h2 class="sub-header">Modifier un chapitre</h2>
+
         </div>
       </div>
     </div>

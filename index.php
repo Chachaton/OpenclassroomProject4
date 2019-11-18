@@ -1,40 +1,41 @@
 <?php
+//ouvrir les contrôleurs
 require('controller/frontend.php');
+require('controller/backend.php');
 
+//conditons puis lancement de la méthode du controller choisi
 try {
     if (isset($_GET['action'])) {
         if ($_GET['action'] == 'accueil') {
             home();
         }
-        elseif ($_GET['action'] == 'listPosts') {
-            listPosts();
-        }
-        elseif ($_GET['action'] == 'post') {
-            if (isset($_GET['id']) && $_GET['id'] > 0) {
-                post();
-            }
-            else {
-                throw new Exception('Aucun identifiant de billet envoyé');
-            }
-        }
-        elseif ($_GET['action'] == 'addComment') {
-            if (isset($_GET['id']) && $_GET['id'] > 0) {
-                if (!empty($_POST['author']) && !empty($_POST['comment'])) {
-                    addComment($_GET['id'], $_POST['author'], $_POST['comment']);
-                }
-                else {
-                    throw new Exception('Tous les champs ne sont pas remplis !');
-                }
-            }
-            else {
-                throw new Exception('Aucun identifiant de billet envoyé');
-            }
-        }
-    }
-    else {
-        listPosts();
+        elseif ($_GET['action'] == 'auteur') {
+        	author();
+    	}
+        elseif ($_GET['action'] == 'roman') {
+        	chapters();
+    	}
+        elseif ($_GET['action'] == 'contact') {
+        	contact();
+    	}
+        elseif ($_GET['action'] == 'connexion') {
+        	logIn();
+    	}
+        elseif ($_GET['action'] == 'changeArticle') {
+        	changeArticle();
+    	}
+        elseif ($_GET['action'] == 'dashboard') {
+        	dashboard();
+    	}
+        elseif ($_GET['action'] == 'manageReviews') {
+        	manageReviews();
+    	}
+        elseif ($_GET['action'] == 'newArticle') {
+        	newArticle();
+    	}
     }
 }
+
 catch(Exception $e) {
     echo 'Erreur : ' . $e->getMessage();
 }

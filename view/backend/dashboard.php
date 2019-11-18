@@ -42,7 +42,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Tableau de bord</a>
+          <a class="navbar-brand" href="dashboard.php">Tableau de bord</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -57,9 +57,9 @@
       <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
-            <li><a href="#">Ajouter un chapitre</a></li>
-            <li><a href="#">Modifier un chapitre</a></li>
-            <li><a href="#">Gérer les avis</a></li>
+            <li><a href="newArticle.php">Ajouter un chapitre</a></li>
+            <li><a href="changeArticle.php">Modifier un chapitre</a></li>
+            <li><a href="manageReviews.php">Gérer les avis</a></li>
           </ul>
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">

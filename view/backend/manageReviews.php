@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -65,35 +65,8 @@
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
           <h1 class="page-header">Billet simple pour l'Alaska</h1>
 
-          <h2 class="sub-header">Ajouter un chapitre</h2>
-          <div class="table-responsive">
-<form>
-  <div class="form-group">
-    <label for="exampleFormControlInput1">Date</label>
-    <input type="date" class="form-control" id="exampleFormControlInput1">
-  </div>
-  <div class="form-group">
-    <label for="exampleFormControlInput2">Chapitre</label>
-    <input type="text" class="form-control" id="exampleFormControlInput2">
-  </div>
-  <div class="form-group">
-    <label for="exampleFormControlInput3">Titre</label>
-    <input type="text" class="form-control" id="exampleFormControlInput3">
-  </div>
-    <div class="form-group">
-    <label for="exampleFormControlTextarea1">Légende</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
-  </div>
-  <div class="form-group">
-    <label for="exampleFormControlTextarea2">Texte</label>
-    <textarea class="form-control" id="exampleFormControlTextarea2" rows="10"></textarea>
-  </div>
-  <div class="custom-file">
-    <label class="custom-file-label" for="customFile">Ajouter une image</label>
-    <input type="file" class="custom-file-input" id="customFile">
-  </div>
-</form>
-          </div>
+          <h2 class="sub-header">Gérer les avis</h2>
+
         </div>
       </div>
     </div>

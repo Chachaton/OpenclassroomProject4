@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
-    <meta name="home" content="">
+    <meta name="author" content="">
     <link rel="icon" href="">
 
     <title>Jean Forteroche</title>
@@ -48,7 +48,7 @@
                 <li class="active"><a href="home.php">Accueil</a></li>
                 <li><a href="author.php">L'auteur</a></li>
                 <li><a href="chapters.php">Le roman</a></li>
-                <li><a href="contact.php">Contactez-moi</a></li>  
+                <li><a href="contact.php">Contactez-moi</a></li>   
               </ul>
             </div>
           </div>
@@ -62,51 +62,17 @@
     ================================================== -->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
+
       <div class="carousel-inner" role="listbox">
         <div class="item active">
           <img class="first-slide" src="../../public/images/caroussel1.jpg" alt="First slide">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Jean Forteroche</h1>
-              <p>Publier un livre chapitre par chapitre sur mon blog, c'est l'idée originale que je vous propose. Bonne lecture!</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">En découvrir plus</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img class="second-slide" src="../../public/images/caroussel2.jpg" alt="Second slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Billet simple pour l'Alaska</h1>
-              <p>Un meurtre, un enquêteur en proie avec ses propres démons, une atmosphère froide et pésante sont les ingrédients de mon nouveau polar. </p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">En lire plus</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img class="third-slide" src="../../public/images/caroussel3.jpg" alt="Third slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Contactez-moi</h1>
-              <p>Cette méthode de travail me permet d'échanger avec mes lecteurs et j'aime avoir vos retours au fil des chapitres.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Contact</a></p>
+              <h1>L'auteur</h1>
             </div>
           </div>
         </div>
       </div>
-      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
     </div><!-- /.carousel -->
 
       <!-- START THE FEATURETTES -->
@@ -114,47 +80,23 @@
       <hr class="featurette-divider">
 
       <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Chapitre 1. <span class="text-muted">La neige</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" src="../../public/images/neige.jpg" alt="Generic placeholder image">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
         <div class="col-md-7 col-md-push-5">
-          <h2 class="featurette-heading">Chapitre 2. <span class="text-muted">Le garde-champêtre</span></h2>
+          <h2 class="featurette-heading">Jean Forteroche</h2>
           <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
         </div>
         <div class="col-md-5 col-md-pull-7">
-          <img class="featurette-image img-responsive center-block" src="../../public/images/gardechampetre.jpg" alt="Generic placeholder image">
+          <img class="featurette-image img-responsive center-block" src="../../public/images/auteur.jpg" alt="Generic placeholder image">
         </div>
       </div>
 
       <hr class="featurette-divider">
 
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Chapitre 3. <span class="text-muted">Le lac gelé</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" src="../../public/images/lac.jpg" alt="Generic placeholder image">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
 
       <!-- /END THE FEATURETTES -->
 
 
       <!-- FOOTER -->
       <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
         <p>&copy; 2016 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a> &middot; <a href="logIn.php">Admin</a></p>
       </footer>
 
