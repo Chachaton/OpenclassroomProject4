@@ -75,8 +75,25 @@
       </div>
     </div><!-- /.carousel -->
 
-
-
+    <!--Formulaire de contact-->
+    <form>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Nom</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" >
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlInput2">Prénom</label>
+        <input type="text" class="form-control" id="exampleFormControlInput2">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Adresse mail</label>
+        <input type="email" class="form-control" id="exampleInputEmail1">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlTextarea2">Votre message</label>
+        <textarea class="form-control" id="exampleFormControlTextarea2" rows="10"></textarea>
+      </div>
+    </form>
 
       <!-- FOOTER -->
       <footer>

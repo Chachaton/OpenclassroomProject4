@@ -2,25 +2,27 @@
 
 function home()
 {
-    require('view/frontend/home.php');
+    require 'view/frontend/home.php';
 }
 
 function author()
 {
-    require('view/frontend/author.php');
+    require 'view/frontend/author.php';
 }
+
+
 
 function chapters()
 {
-    require('view/frontend/chapters.php');
+    require' view/frontend/chapters.php';
 }
 
 function contact()
 {
-    require('view/frontend/contact.php');
+    require 'view/frontend/contact.php';
 }
 
 function logIn()
 {
-    require('view/frontend/logIn.php');
+    require 'view/frontend/logIn.php';
 }
