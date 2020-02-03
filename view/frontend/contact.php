@@ -46,9 +46,9 @@
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
                 <li class="active"><a href="home.php">Accueil</a></li>
-                <li><a href="author.php">L'auteur</a></li>
-                <li><a href="chapters.php">Le roman</a></li>
-                <li><a href="contact.php">Contactez-moi</a></li>  
+                <li><a href="biographie.php">L'auteur</a></li>
+                <li><a href="billetSimple.php">Le roman</a></li>
+                <li><a href="contact.php">Contactez-moi</a></li> 
               </ul>
             </div>
           </div>
@@ -76,7 +76,7 @@
     </div><!-- /.carousel -->
 
     <!--Formulaire de contact-->
-    <form>
+    <form id="form-contact" action="index.php?action=contact" method="post">
       <div class="form-group">
         <label for="exampleFormControlInput1">Nom</label>
         <input type="text" class="form-control" id="exampleFormControlInput1" >

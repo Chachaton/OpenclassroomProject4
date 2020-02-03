@@ -1,34 +1,55 @@
 <?php
-// routeur du projet
-session_start();
+
+//Auto-chargement de classes
+function chargerClasse($classe){
+    require 'model/' . $classe . '.php';
+}
+spl_autoload_register('chargerClasse');
+
+//Chargement de la Bdd
+require 'model/Connexion.php';
+$connexion = new Connexion();
+$connect = $connexion->connect();
+
+//Twig
+require_once 'vendor/autoload.php';
+require 'libraries/Twig.php';
+$templateTwig = new Twig();
+$twig = $templateTwig->run();
+
 
 // on ouvre les controllers
-require 'controller/frontend.php';
+require 'controller/frontend.php'; 
 require 'controller/backend.php';
 
-// conditions pour lancement des controllers  
+//instancie les class
+$frontend = new frontendController($connect, $twig);
+$backend = new Backend;
+
+
+//conditions pour lancement des controllers  
 try{ 
     if (isset($_GET['action'])) {
 
         // FRONTEND
         if ($_GET['action'] == 'home') {
-            home();
+            $frontend->home();
         }
 
-        elseif ($_GET['action'] == 'author') {
-            author();
+        elseif ($_GET['action'] == 'biographie') {
+            $frontend->biographie();
         }
 
-        elseif ($_GET['action'] == 'chapters') {
-            chapters();
+        elseif ($_GET['action'] == 'billetSimple') {
+            $frontend->billetSimple();
         }
 
         elseif ($_GET['action'] == 'contact') {
-            contact();
+            $frontend->contact();
         }
 
         elseif ($_GET['action'] == 'logIn') {
-            logIn();
+            $frontend->logIn();
         }
 
         // BACKEND

@@ -47,9 +47,9 @@
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
                 <li class="active"><a href="home.php">Accueil</a></li>
-                <li><a href="author.php">L'auteur</a></li>
-                <li><a href="chapters.php">Le roman</a></li>
-                <li><a href="contact.php">Contactez-moi</a></li>  
+                <li><a href="biographie.php">L'auteur</a></li>
+                <li><a href="billetSimple.php">Le roman</a></li>
+                <li><a href="contact.php">Contactez-moi</a></li> 
               </ul>
             </div>
           </div>

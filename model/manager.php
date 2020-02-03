@@ -1,18 +1,21 @@
-<?php
+<?php 
+
 class Manager {
-	public function log() {
-		try
-		{
-			// On se connecte à MySQL
-			$bdd = new PDO('mysql:host=localhost;dbname=Jean Forteroche;charset=utf8', 'root', 'root');
-		}
-		catch(Exception $e)
-		{
-			// En cas d'erreur, on affiche un message et on arrête tout
-		        die('Erreur : '.$e->getMessage());
-		}
 
-	}
+	protected $db;
+    public function log() {
+    
+    	// exécuté à l'instanciation des models    
+        require('model/log.php');
+        
+        try
+        {
+            $this->db = $logDetails;
+        } 
+        catch (Exception $e) 
+        {
+            die('Erreur : ' . $e->getMessage());
+        }
+    }
 }
-
 
